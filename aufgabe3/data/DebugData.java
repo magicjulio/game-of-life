@@ -1,19 +1,19 @@
-package aufgabe3.data;
+package data;
 
 import java.lang.Math;
 
 // This class is representing a cartesian coordinate in a 2d space with double coordinates.
-class DebugData {
+public class DebugData {
     private double x;
     private double y;
     
-    public DebugData(int x, int y) {
+    public DebugData(double x, double y) {
         this.x = x;
         this.y = y;
     }
     
     public double distance(DebugData other) {
-        return Math.pow(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
+        return Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
     }
     
     public double getX(){
@@ -32,7 +32,7 @@ class DebugData {
         this.y = y;
     }
     
-    public String str() {
+    public String toString() {
         return String.format("(%g, %g)", this.x, this.y);
     }
 }

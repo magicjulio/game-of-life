@@ -1,10 +1,10 @@
-class Tree {
+package model;
+
+public class Tree {
 
     public static void main(String[] args) {
         
     }
-
-
 
     int value;
     Tree left;

@@ -1,4 +1,4 @@
-package aufgabe3;
+import data.DebugData;
 
 class DebugMain {
     public static void main(String[] args) {
@@ -6,6 +6,6 @@ class DebugMain {
         DebugData b = new DebugData(1.0, 1.0);
         // Result should be approx. 5.18
         System.out.println(String.format("The distance between %s and %s is %g",
-            a.str(), b.str(), a.distance(b)));
+            a.toString(), b.toString(), a.distance(b)));
     }
 }
